@@ -288,19 +288,8 @@
         border-bottom-width: 2px;
         border-radius: 100vmax;
         box-shadow: 2px 4px 20px rgba(155, 186, 248, 0.3);
+        margin-bottom: 15px;
       }
-      /* .main__text::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        border: 2px solid transparent;
-        background: linear-gradient(90deg, rgb(220, 231, 245) 0%, rgb(255, 255, 255) 50%, rgb(220, 231, 245) 100%);
-        -webkit-mask: linear-gradient(rgb(255, 255, 255) 0 0) content-box, linear-gradient(rgb(255, 255, 255) 0 0);
-        mask: linear-gradient(rgb(255, 255, 255) 0 0) content-box, linear-gradient(rgb(255, 255, 255) 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-      } */
       .main__text-inner {
         display: grid;
         grid-auto-flow: column;
@@ -521,7 +510,7 @@
         }
         .main__wrapp {
           max-width: 100%;
-          padding: 0px 40px;
+          padding: 0px 35px;
           text-align: center;
         }
         .main__text {
@@ -536,7 +525,7 @@
           min-height: 85px;
         }
         .main__btn--inner {
-          min-width: 225px;
+          min-width: 255px;
         }
         .popular {
           grid-template-columns: repeat(2, 1fr);
@@ -552,6 +541,12 @@
         }
         .popular__link {
           max-width: 124px;
+        }
+        .main__wrapp {
+          padding: 0 15px;
+        }
+        .main__btn--inner {
+          min-width: 225px;
         }
       }
     </style>
@@ -609,7 +604,7 @@
           <picture class="responsive-logo">
             <source srcset="images/logo.webp" media="(min-width: 768px)" />
             <source srcset="images/logo-mobile.webp" media="(max-width: 767px)" />
-            <img src="images/logo-mobile.webp" width="36" height="36" alt="Logo" />
+            <img src="images/logo-mobile.webp" width="100%" height="100%" alt="Logo" />
           </picture>
         </a>
         <div class="btn-box header__btn-box">
@@ -622,9 +617,9 @@
       <div class="main">
         <div class="main__wrapp">
           <p class="main__text">
-            <span class="main__text-inner"><span>Welcome package</span></span>
+            <span class="main__text-inner"><span>Welcome bonus</span></span>
           </p>
-          <p class="main__text-title">Up to €1.750 + 150 FS + 1 Bonus Crab in 3 bonuses</p>
+          <p class="main__text-title">100% up to €500 + 200 FS</p>
           <a class="main__btn button" href="go"><span class="batton__inner main__btn--inner">Join Now</span></a>
         </div>
       </div>
